@@ -1,4 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/nonzod/yii2-foundation/v/stable.svg)](https://packagist.org/packages/nonzod/yii2-foundation) [![Total Downloads](https://poser.pugx.org/nonzod/yii2-foundation/downloads.svg)](https://packagist.org/packages/nonzod/yii2-foundation) [![Latest Unstable Version](https://poser.pugx.org/nonzod/yii2-foundation/v/unstable.svg)](https://packagist.org/packages/nonzod/yii2-foundation) [![License](https://poser.pugx.org/nonzod/yii2-foundation/license.svg)](https://packagist.org/packages/nonzod/yii2-foundation)
+[![Latest Stable Version](https://poser.pugx.org/foundationize/yii2-foundation/v/stable.svg)](https://packagist.org/packages/foundationize/yii2-foundation) [![Total Downloads](https://poser.pugx.org/foundationize/yii2-foundation/downloads.svg)](https://packagist.org/packages/foundationize/yii2-foundation) [![Latest Unstable Version](https://poser.pugx.org/foundationize/yii2-foundation/v/unstable.svg)](https://packagist.org/packages/foundationize/yii2-foundation) [![License](https://poser.pugx.org/foundationize/yii2-foundation/license.svg)](https://packagist.org/packages/foundationize/yii2-foundation)
 
 
 Foundation Extension for Yii 2
@@ -32,13 +32,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist nonzod/yii2-foundation "dev-master"
+php composer.phar require --prefer-dist foundationize/yii2-foundation "dev-master"
 ```
 
 or add
 
 ```
-"nonzod/yii2-foundation": "dev-master"
+"foundationize/yii2-foundation": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -48,6 +48,5 @@ Further Information
 Please, check the [Zurb Foundation site](http://foundation.zurb.com) documentation for further information about its configuration options.
 
 
-[![Digisin!](http://www.gravatar.com/avatar/22a20658376852cef64a7a2abcfa761a.png)](http://www.digisin.it)  
-<i>Web & Mobile development</i>  
-[www.digisin.it](http://www.digisin.it)  
+<i>Your framework + Foundation = <3</i>  
+[foundationize.com](http://foundationize.com)

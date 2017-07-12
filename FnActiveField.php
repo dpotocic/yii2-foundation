@@ -1,9 +1,7 @@
 <?php
-
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
- *  @version dev
+ *  @link    http://foundationize.com
+ *  @package foundationize/yii2-foundation 
  */
 
 namespace foundationize\foundation;
@@ -14,13 +12,13 @@ use yii\helpers\ArrayHelper;
 /**
  * Description of ActiveField
  *
- * @author Nicola Tomassoni <nicola@digisin.it>
+ 
  */
-class ActiveField extends \yii\widgets\ActiveField {
+class FnActiveField extends \yii\widgets\ActiveField {
 
   public $template = "{beginLabel}{labelTitle}\n{input}{endLabel}\n{error}\n{hint}\n";
   public $inlineTemplate = "<div class=\"row\"><div class=\"small-3 columns\">{label}</div><div class=\"small-9 columns\">{input}\n{error}\n{hint}</div></div>\n";
-  public $checkboxTemplate = "{label}\n{input}\n{error}\n{hint}\n";
+  public $checkboxTemplate = "{input}\n{label}\n{error}\n{hint}\n";
   public $checkboxListTemplate = "{label}\n{input}\n{error}\n{hint}\n";
   public $radioTemplate = "{label}\n{input}\n{error}\n{hint}\n";
   public $radioListTemplate = "{label}\n{input}\n{error}\n{hint}\n";
@@ -126,7 +124,9 @@ class ActiveField extends \yii\widgets\ActiveField {
       $this->template = $this->form->layout === 'inline' ?
           $this->inlineTemplate : $this->checkboxTemplate;
     }
-
+    
+    $this->template = $this->checkboxTemplate;
+    
     return parent::checkbox($options, $enclosedByLabel);
   }
 
@@ -207,7 +207,7 @@ class ActiveField extends \yii\widgets\ActiveField {
     $config = [
         'hintOptions' => [
             'tag' => 'p',
-            'class' => 'hint-box'
+            'class' => 'help-text'
         ],
         'errorOptions' => [
             'tag' => 'small',
